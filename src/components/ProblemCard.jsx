@@ -1,0 +1,17 @@
+import React from 'react'
+
+const ProblemCard = ({icon, iconBgColor, title, subtitle}) => {
+  return (
+    <div className="flex p-8 bg-white rounded-lg shadow-md flex-col gap-4 problem-card-shadow">
+      <div
+        className={`w-16 h-16 rounded-lg ${iconBgColor} flex items-center justify-center mr-4`}
+      >
+        {icon}
+      </div>
+      <h3 className="text-xl font-semibold">{title}</h3>
+      <p className="text-gray-600">{subtitle}</p>
+    </div>
+  );
+}
+
+export default ProblemCard

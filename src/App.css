@@ -1,0 +1,31 @@
+:root {
+	--nav-height: 72px;
+	--section-vertical: 4rem; /* consistent vertical padding for sections */
+}
+
+/* Fixed navbar */
+.site-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: var(--nav-height);
+	z-index: 50;
+}
+
+/* Main content sits below fixed navbar and uses consistent section spacing */
+.main-content {
+	padding-top: calc(var(--nav-height) + var(--section-vertical));
+}
+
+.site-section {
+	padding-top: var(--section-vertical);
+	padding-bottom: var(--section-vertical);
+	width: 100%;
+}
+
+/* subtle elevation for small chip elements */
+.problem-card-shadow, .chip-shadow {
+    box-shadow: 0 17px 29.7px rgba(209,216,223,40%);
+}
+
