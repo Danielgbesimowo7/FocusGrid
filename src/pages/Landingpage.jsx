@@ -115,7 +115,7 @@ const Landingpage = () => {
                   Your Academic Life <br></br>{" "}
                   <span className="text-primary-alt">Organized</span>
                 </h1>
-                <p className=" lg:text-left text-center">
+                <p className="text-lg lg:text-xl lg:text-left text-center">
                   {" "}
                   Stop juggling multiple apps and scatterd notes.
                   FocusGrid brings your tasks, assignments, deadlines, and
@@ -155,23 +155,23 @@ const Landingpage = () => {
       <section className="site-section bg-white px-4 sm:px-6 md:px-12">
         <div className="max-w-400 m-auto py-4 grid grid-cols-2 md:grid-cols-4 gap-4 gap-y-10 sm:gap-4 lg:gap-40">
           <div className="text-center grid gap-2">
-            <h2 className="text-primary-alt text-4xl lg:text-5xl font-bold ">50k+</h2>
-            <p className="">Active Students</p>
+            <h2 className="text-primary-alt text-3xl lg:text-5xl font-bold ">50k+</h2>
+            <p className="text-lg">Active Students</p>
           </div>
 
           <div className="text-center flex flex-col gap-2">
-            <h2 className="text-primary-alt text-4xl lg:text-5xl  font-bold ">2M+</h2>
-            <p className="">Task Completed</p>
+            <h2 className="text-primary-alt text-3xl lg:text-5xl  font-bold ">2M+</h2>
+            <p className="text-lg">Task Completed</p>
           </div>
 
           <div className="text-center flex  items-center flex-col gap-2">
-            <h2 className="text-primary-alt text-4xl lg:text-5xl  font-bold">98%</h2>
-            <p className="">Satisfaction Rate</p>
+            <h2 className="text-primary-alt text-3xl lg:text-5xl  font-bold">98%</h2>
+            <p className="text-lg">Satisfaction Rate</p>
           </div>
 
           <div className="text-center flex flex-col gap-2">
-            <h2 className="text-primary-alt text-4xl lg:text-5xl font-bold">150</h2>
-            <p className="">Universities</p>
+            <h2 className="text-primary-alt text-3xl lg:text-5xl font-bold">150</h2>
+            <p className="text-lg">Universities</p>
           </div>
         </div>
       </section>
@@ -185,7 +185,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Drowning in Academic Chaos?
           </h2>
-          <p className="text-center mt-4 max-w-2xl m-auto">
+          <p className="text-lg lg:text-xl text-center mt-4 max-w-2xl m-auto">
             Generic task app weren’t built for students. They don’t understand
             semesters, courses, group projects, or the unique challenges of
             academic life.
@@ -226,7 +226,7 @@ const Landingpage = () => {
             <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
               Everything You Need to Excel
             </h2>
-            <p className="text-center mt-4 max-w-2xl m-auto">
+            <p className="text-lg lg:text-xl text-center mt-4 max-w-2xl m-auto">
               Built specifically for students, with features that understand
               your academic workflow
             </p>
@@ -247,8 +247,8 @@ const Landingpage = () => {
               </div>
 
               <div className="">
-                <h2 className="font-medium text-[24px]">Course Organized Tasks</h2>
-                <p>
+                <h2 className="font-medium text-[22px]">Course Organized Tasks</h2>
+                <p className="text-lg lg:text-xl">
                   Say goodbye to generic to-do lists. Organize your assignments,
                   readings and projects by course. See everything at a glance
                   with priority indicators, deadline countdowns, and completion
@@ -257,29 +257,37 @@ const Landingpage = () => {
               </div>
 
               <div className="space-y-3.5">
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Smart Course Grouping</h3>
-                    <p className="text-lg">
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Smart Course Grouping</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">
                       Automatically organize tasks by course with color coding
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Priority Management</h3>
-                    <p className="text-lg">
-                      Tag tags as urgent, important, or routine.
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Priority Management</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">
+                      Tag tasks as urgent, important, or routine.
                     </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Deadline Reminders</h3>
-                    <p className="text-lg">
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Deadline Reminders</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">
                       Never miss an assignment with smart notifications.
                     </p>
                   </div>
@@ -301,8 +309,8 @@ const Landingpage = () => {
               </div>
 
               <div>
-                <h2 className="font-medium text-[24px]">Built-in Pomodoro Timer</h2>
-                <p>
+                <h2 className="font-medium text-[22px]">Built-in Pomodoro Timer</h2>
+                <p className="text-lg lg:text-xl">
                   Maximize your focus with our integrated study timer. USe the
                   proven Pomodoro technique or customize you own study
                   intervals. Track your productive hours and build consistent
@@ -311,31 +319,33 @@ const Landingpage = () => {
               </div>
 
               <div className="space-y-3.5">
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Customizable Sessions</h3>
-                    <p className="text-lg">
-                      Set your own focus and break durations
-                    </p>
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Customizable Sessions</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">Set your own focus and break durations</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Study Statistics</h3>
-                    <p className="text-lg">
-                      Track total study hours per course and week
-                    </p>
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Study Statistics</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">Track total study hours per course and week</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Break Reminders</h3>
-                    <p className="text-lg">
-                      Gentle nudges to take breaks and stay fresh
-                    </p>
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Break Reminders</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">Gentle nudges to take breaks and stay fresh</p>
                   </div>
                 </div>
               </div>
@@ -355,8 +365,8 @@ const Landingpage = () => {
               </div>
 
               <div>
-                <h2 className="font-medium text-[24px]">Course-Linked Notes</h2>
-                <p>
+                <h2 className="font-medium text-[22px]">Course-Linked Notes</h2>
+                <p className="text-lg lg:text-xl">
                   Keep all your lecture note, study materials, and quick
                   thoughts organized by course. Rich text-formatting, tagging
                   and powerful search make finding information effortless
@@ -364,31 +374,33 @@ const Landingpage = () => {
               </div>
 
               <div className="space-y-3.5">
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Rich Text Editor</h3>
-                    <p className="text-lg">
-                      Format notes with headers , lists, and highlights
-                    </p>
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Rich Text Editor</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">Format notes with headers, lists, and highlights</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Quick Course</h3>
-                    <p className="text-lg">
-                      Jot down ideas instantly during lectures
-                    </p>
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Quick Course</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">Jot down ideas instantly during lectures</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-3">
-                  <img src={checkfilled} alt="" />
+
+                <div className="flex items-start gap-2">
                   <div className="flex flex-col gap-1">
-                    <h3 className="">Powerful Search</h3>
-                    <p className="text-lg">
-                      Find any note across all course instantly
-                    </p>
+                    <div className="flex items-center gap-1">
+                      <img className="w-5 h-5" src={checkfilled} alt="" />
+                      <h3 className="font-medium text-lg text-gray-700">Powerful Search</h3>
+                    </div>
+                    <p className="text-lg text-gray-500">Find any note across all courses instantly</p>
                   </div>
                 </div>
               </div>
@@ -432,7 +444,7 @@ const Landingpage = () => {
           <HIWcard
             number="3"
             title="Add Tasks"
-            subtitle="Start adding assignment , readings, and project. Set priorities and deadlines."
+            subtitle="Start adding assignment, readings, and project. Set priorities and deadlines."
             icon={<img src={taskadd} />}
             iconBgColor="bg-[#FCE7F3]"
           ></HIWcard>
