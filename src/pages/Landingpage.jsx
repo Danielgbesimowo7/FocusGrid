@@ -115,7 +115,7 @@ const Landingpage = () => {
                   Your Academic Life <br></br>{" "}
                   <span className="text-primary-alt">Organized</span>
                 </h1>
-                <p className="lg:text-left text-center">
+                <p className=" lg:text-left text-center">
                   {" "}
                   Stop juggling multiple apps and scatterd notes.
                   FocusGrid brings your tasks, assignments, deadlines, and
