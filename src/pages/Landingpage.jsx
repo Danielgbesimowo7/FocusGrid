@@ -116,12 +116,7 @@ const Landingpage = () => {
                   <span className="text-primary-alt">Organized</span>
                 </h1>
                 <p className="text-lg lg:text-xl lg:text-left text-center">
-                  {" "}
-                  Stop juggling multiple apps and scatterd notes.
-                  FocusGrid brings your tasks, assignments, deadlines, and
-        
-                  study sessions into one powerful platform designed 
-                  specifiaclly for students.
+                  Stop juggling multiple apps and scattered notes. FocusGrid brings your tasks, assignments, deadlines, and study sessions into one powerful platform designed specifically for students.
                 </p>
 
                 <div className="flex gap-4 mx-auto lg:ml-0">
@@ -186,9 +181,7 @@ const Landingpage = () => {
             Drowning in Academic Chaos?
           </h2>
           <p className="text-lg lg:text-xl text-center mt-4 max-w-2xl m-auto">
-            Generic task app weren’t built for students. They don’t understand
-            semesters, courses, group projects, or the unique challenges of
-            academic life.
+            Generic task apps weren't built for students. They don’t understand semesters, courses, group projects, or the unique challenges of academic life.
           </p>
         </div>
         <div className="max-w-400 m-auto mt-12 grid  sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -298,7 +291,7 @@ const Landingpage = () => {
 
           {/* Feature 2 */}
           <div className="flex flex-col lg:flex-row justify-between gap-12 items-start">
-            <div className="bg-[#F0F6FF] w-full lg:w-1/2 order-2 rounded-lg p-12 flex items-center justify-center ">
+            <div className="bg-[#F0F6FF] lg:order-2 w-full lg:w-1/2 md:order-2 rounded-lg p-12 flex items-center justify-center ">
               <img className="w-100" src={feature2} alt="course" />
             </div>
 
@@ -311,10 +304,7 @@ const Landingpage = () => {
               <div>
                 <h2 className="font-medium text-[22px]">Built-in Pomodoro Timer</h2>
                 <p className="text-lg lg:text-xl">
-                  Maximize your focus with our integrated study timer. USe the
-                  proven Pomodoro technique or customize you own study
-                  intervals. Track your productive hours and build consistent
-                  study habits.
+                  Maximize your focus with our integrated study timer. Use the proven Pomodoro technique or customize your own study intervals. Track your productive hours and build consistent study habits.
                 </p>
               </div>
 
@@ -367,9 +357,7 @@ const Landingpage = () => {
               <div>
                 <h2 className="font-medium text-[22px]">Course-Linked Notes</h2>
                 <p className="text-lg lg:text-xl">
-                  Keep all your lecture note, study materials, and quick
-                  thoughts organized by course. Rich text-formatting, tagging
-                  and powerful search make finding information effortless
+                  Keep all your lecture notes, study materials, and quick thoughts organized by course. Rich text formatting, tagging, and powerful search make finding information effortless.
                 </p>
               </div>
 
@@ -444,7 +432,7 @@ const Landingpage = () => {
           <HIWcard
             number="3"
             title="Add Tasks"
-            subtitle="Start adding assignment, readings, and project. Set priorities and deadlines."
+            subtitle="Start adding assignments, readings, and projects. Set priorities and deadlines."
             icon={<img src={taskadd} />}
             iconBgColor="bg-[#FCE7F3]"
           ></HIWcard>
@@ -519,13 +507,13 @@ const Landingpage = () => {
             userName="Juliet Jenner"
             comment="I was drowning in scattered notes and missed assignments before FocusGrid. 
         Now everything is organized by course, and I can actually focus on learning instead of scrambling to remember what’s due. "
-            userDetail="EMedicine, Johns Hopkins."
+            userDetail="Medicine, Johns Hopkins."
           ></CommentCard>
           <CommentCard
             userImg={user5}
             userName="Olamide Afunsho"
             comment="FocusGrid completely changed how I manage my coursework. I went from constantly missing deadlines to being ahead on all my assignments, The course organization is genius"
-            userDetail="Business, Stannford."
+            userDetail="Business, Stanford."
           ></CommentCard>
           <CommentCard
             userImg={user6}
@@ -602,7 +590,7 @@ const Landingpage = () => {
                 $20<span className="text-lg font-medium">/month</span>
               </h1>
             </div>
-            <button className="btn-secondary w-full">Get pro</button>
+            <button className="btn-secondary py-3 w-full">Get pro</button>
             <div className="space-y-4">
               <div className="flex items-center gap-2">
                 <img className="text-white" src={checkfilled} alt="" />
