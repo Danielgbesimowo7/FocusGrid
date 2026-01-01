@@ -13,7 +13,7 @@ const HIWcard = ({number, icon, iconBgColor, title, subtitle}) => {
           {icon}
         </div>
         <h3 className="text-xl font-semibold">{title}</h3>
-        <p className="text-lg lg:text-xl text-gray-600">{subtitle}</p>
+        <p className="text-[16px] lg:text-[18px] text-gray-600">{subtitle}</p>
       </div>
     </div>    
   );

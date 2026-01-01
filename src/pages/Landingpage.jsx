@@ -43,9 +43,13 @@ import mobilemenu from "../assets/menu.svg";
 import "../App.css";
 
 const Landingpage = () => {
+  const [mobileOpen, setMobileOpen] = useState(false)
+
+  const toggleMobile = () => setMobileOpen(v => !v)
+
   return (
     <>
-      <div className="w-full bg-surface min-h-screen">
+      <div className="w-full bg-surface min-h-screen font-primary">
         <nav className="site-nav w-full px-4 sm:px-6 md:px-12 bg-white ">
           <div className="h-full max-w-400 m-auto flex justify-between items-center">
             <div className="flex items-center gap-8">
@@ -53,54 +57,96 @@ const Landingpage = () => {
               <div className="space-x-5 lg:block hidden ">
                 <a
                   href="#"
-                  className="cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
+                  className="c ursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
                 >
                   Home
                 </a>
                 <a
                   href="#features"
-                  className="cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
+                  className=" cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
                 >
                   Features
                 </a>
                 <a
                   href="#howitworks"
-                  className="cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
+                  className=" cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
                 >
                   How It Works
                 </a>
                 <a
                   href="#testimonials"
-                  className="cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
+                  className=" cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
                 >
                   Testimonials
                 </a>
                 <a
                   href="#pricing"
-                  className="cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
+                  className=" cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
                 >
                   Pricing
                 </a>
                 <a
                   href="#faqs"
-                  className="cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
+                  className=" cursor-pointer hover:text-primary transition-all duration-300s ease-in-out"
                 >
                   FAQs
                 </a>
               </div>
             </div>
 
-            <div className="flex items-center gap-4">
-              <a className="hidden lg:block cursor-pointer hover:text-primary transition-all duration-300s ease-in-out">
+              <div className="flex items-center gap-4">
+              <a className=" hidden lg:block cursor-pointer hover:text-primary transition-all duration-300s ease-in-out">
                 Sign in
               </a>
               <button className="hidden lg:block btn-primary">
                 Get started for free
               </button>
-              <button className="lg:hidden cursor-pointer">
-                <img className="w-full" src={mobilemenu} alt="" />
+              <button className="lg:hidden p-2" onClick={toggleMobile} aria-expanded={mobileOpen} aria-label="Open menu">
+                <img className="w-6 h-6" src={mobilemenu} alt="menu" />
               </button>
             </div>
+          </div>
+          {/* Mobile menu - shown when `mobileOpen` is true */}
+          {/* Off-canvas mobile menu sliding from/to the right */}
+          <div className={`lg:hidden fixed inset-0 z-50 ${mobileOpen ? 'pointer-events-auto' : 'pointer-events-none'}`} aria-hidden={!mobileOpen}>
+            {/* backdrop */}
+            <div className={`absolute inset-0 bg-black/30 transition-opacity duration-300 ${mobileOpen ? 'opacity-100' : 'opacity-0'}`} onClick={() => setMobileOpen(false)} />
+
+            {/* panel */}
+            <aside className={`absolute top-0 right-0 h-full w-[80%] max-w-sm bg-white shadow-xl transform transition-transform duration-300 ${mobileOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+              <div className="p-6">
+                <div className="flex items-center justify-between mb-4">
+                  <img src={focusgridLogo} alt="FocusGrid" className="h-6" />
+                  <button onClick={() => setMobileOpen(false)} aria-label="Close menu" className="p-2 rounded-md hover:bg-slate-100">✕</button>
+                </div>
+
+                <nav>
+                  <ul className="flex flex-col gap-3">
+                    <li>
+                      <a href="#" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Home</a>
+                    </li>
+                    <li>
+                      <a href="#features" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Features</a>
+                    </li>
+                    <li>
+                      <a href="#howitworks" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">How It Works</a>
+                    </li>
+                    <li>
+                      <a href="#testimonials" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Testimonials</a>
+                    </li>
+                    <li>
+                      <a href="#pricing" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Pricing</a>
+                    </li>
+                    <li>
+                      <a href="#faqs" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">FAQs</a>
+                    </li>
+                    <li className="pt-2">
+                      <a onClick={() => setMobileOpen(false)} className="inline-block btn-primary">Get started for free</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </aside>
           </div>
         </nav>
 
@@ -180,7 +226,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Drowning in Academic Chaos?
           </h2>
-          <p className="text-lg lg:text-xl text-center mt-4 max-w-2xl m-auto">
+          <p className="section-subtitle">
             Generic task apps weren't built for students. They don’t understand semesters, courses, group projects, or the unique challenges of academic life.
           </p>
         </div>
@@ -219,7 +265,7 @@ const Landingpage = () => {
             <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
               Everything You Need to Excel
             </h2>
-            <p className="text-lg lg:text-xl text-center mt-4 max-w-2xl m-auto">
+            <p className="section-subtitle">
               Built specifically for students, with features that understand
               your academic workflow
             </p>
@@ -409,7 +455,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Get Started in Minutes
           </h2>
-          <p className="text-center mt-4 max-w-2xl m-auto">
+          <p className="section-subtitle">
             Simple setup, powerful results. Start organizing your academic life
             today.
           </p>
@@ -455,7 +501,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Your Command Center
           </h2>
-          <p className="text-center mt-4 max-w-2xl m-auto">
+          <p className="section-subtitle">
             Everything you need organized in one place
           </p>
         </div>
@@ -477,7 +523,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Loved and Used by Students Everywhere
           </h2>
-          <p className="text-center mt-4 max-w-2xl m-auto">
+          <p className="section-subtitle">
             See how FocusGrid is transforming academic life
           </p>
         </div>
@@ -537,7 +583,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Simple, Transparent Pricing
           </h2>
-          <p className="text-center mt-4 max-w-2xl m-auto">
+          <p className="section-subtitle">
             Choose the plan that fits your academic journey.
           </p>
         </div>
@@ -673,7 +719,7 @@ const Landingpage = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-center mt-6 text-[#555556]">
             Frequently Asked Questions
           </h2>
-          <p className="text-center mt-4 max-w-2xl m-auto">
+          <p className="section-subtitle">
             Choose the plan that fits your academic journey.
           </p>
         </div>
