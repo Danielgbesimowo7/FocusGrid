@@ -7,6 +7,7 @@ import HIWcard from "../components/HIWcard";
 import ProblemCard from "../components/ProblemCard";
 import CommentCard from "../components/CommentCard";
 import Accordion from "../components/Accordion";
+import faqs from '../data/faqs'
 import Button from "../components/Button"
 
 // Images and Icons
@@ -27,12 +28,7 @@ import useradd from "../assets/user-add.svg";
 import taskadd from "../assets/task-add.svg";
 import rocket from "../assets/rocket.svg";
 import bookmark from "../assets/bookmark-add.svg";
-import user1 from "../assets/user1.svg";
-import user2 from "../assets/user2.svg";
-import user3 from "../assets/user3.svg";
-import user4 from "../assets/user4.svg";
-import user5 from "../assets/user5.svg";
-import user6 from "../assets/user6.svg";
+import comments from '../data/comments'
 import twitter from "../assets/twitter.svg";
 import facebook from "../assets/facebook.svg";
 import instagram from "../assets/instagram.svg";
@@ -123,22 +119,22 @@ const Landingpage = () => {
                 <nav>
                   <ul className="flex flex-col gap-3">
                     <li>
-                      <a href="#" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Home</a>
+                      <a href="#" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700 text-[1.1rem]">Home</a>
                     </li>
                     <li>
-                      <a href="#features" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Features</a>
+                      <a href="#features" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700 text-[1.1rem]">Features</a>
                     </li>
                     <li>
-                      <a href="#howitworks" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">How It Works</a>
+                      <a href="#howitworks" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700 text-[1.1rem]">How It Works</a>
                     </li>
                     <li>
-                      <a href="#testimonials" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Testimonials</a>
+                      <a href="#testimonials" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700 text-[1.1rem]">Testimonials</a>
                     </li>
                     <li>
-                      <a href="#pricing" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">Pricing</a>
+                      <a href="#pricing" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700 text-[1.1rem]">Pricing</a>
                     </li>
                     <li>
-                      <a href="#faqs" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700">FAQs</a>
+                      <a href="#faqs" onClick={() => setMobileOpen(false)} className="inline-block text-slate-700 text-[1.1rem]">FAQs</a>
                     </li>
                     <li className="pt-2">
                       <a onClick={() => setMobileOpen(false)} className="inline-block btn-primary">Get started for free</a>
@@ -161,7 +157,7 @@ const Landingpage = () => {
                   Your Academic Life <br></br>{" "}
                   <span className="text-primary-alt">Organized</span>
                 </h1>
-                <p className="text-lg lg:text-xl lg:text-left text-center">
+                <p className="text-[1rem] lg:text-xl lg:text-left text-center">
                   Stop juggling multiple apps and scattered notes. FocusGrid brings your tasks, assignments, deadlines, and study sessions into one powerful platform designed specifically for students.
                 </p>
 
@@ -286,8 +282,8 @@ const Landingpage = () => {
               </div>
 
               <div className="">
-                <h2 className="font-medium text-[22px]">Course Organized Tasks</h2>
-                <p className="text-lg lg:text-xl">
+                <h2 className="font-medium text-[1.3rem]">Course Organized Tasks</h2>
+                <p className="text-[1rem]">
                   Say goodbye to generic to-do lists. Organize your assignments,
                   readings and projects by course. See everything at a glance
                   with priority indicators, deadline countdowns, and completion
@@ -302,7 +298,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Smart Course Grouping</h3>
                     </div>
-                    <p className="text-lg text-gray-500">
+                    <p className="text-[1rem] text-gray-500">
                       Automatically organize tasks by course with color coding
                     </p>
                   </div>
@@ -314,7 +310,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Priority Management</h3>
                     </div>
-                    <p className="text-lg text-gray-500">
+                    <p className="text-[1rem] text-gray-500">
                       Tag tasks as urgent, important, or routine.
                     </p>
                   </div>
@@ -326,7 +322,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Deadline Reminders</h3>
                     </div>
-                    <p className="text-lg text-gray-500">
+                    <p className="text-[1rem] text-gray-500">
                       Never miss an assignment with smart notifications.
                     </p>
                   </div>
@@ -348,8 +344,8 @@ const Landingpage = () => {
               </div>
 
               <div>
-                <h2 className="font-medium text-[22px]">Built-in Pomodoro Timer</h2>
-                <p className="text-lg lg:text-xl">
+                <h2 className="font-medium text-[1.3rem]">Built-in Pomodoro Timer</h2>
+                <p className="text-[1rem]">
                   Maximize your focus with our integrated study timer. Use the proven Pomodoro technique or customize your own study intervals. Track your productive hours and build consistent study habits.
                 </p>
               </div>
@@ -361,7 +357,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Customizable Sessions</h3>
                     </div>
-                    <p className="text-lg text-gray-500">Set your own focus and break durations</p>
+                    <p className="text-[1rem] text-gray-500">Set your own focus and break durations</p>
                   </div>
                 </div>
 
@@ -371,7 +367,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Study Statistics</h3>
                     </div>
-                    <p className="text-lg text-gray-500">Track total study hours per course and week</p>
+                    <p className="text-[1rem] text-gray-500">Track total study hours per course and week</p>
                   </div>
                 </div>
 
@@ -381,7 +377,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Break Reminders</h3>
                     </div>
-                    <p className="text-lg text-gray-500">Gentle nudges to take breaks and stay fresh</p>
+                    <p className="text-[1rem] text-gray-500">Gentle nudges to take breaks and stay fresh</p>
                   </div>
                 </div>
               </div>
@@ -401,8 +397,8 @@ const Landingpage = () => {
               </div>
 
               <div>
-                <h2 className="font-medium text-[22px]">Course-Linked Notes</h2>
-                <p className="text-lg lg:text-xl">
+                <h2 className="font-medium text-[1.3rem]">Course-Linked Notes</h2>
+                <p className="text-[1rem]">
                   Keep all your lecture notes, study materials, and quick thoughts organized by course. Rich text formatting, tagging, and powerful search make finding information effortless.
                 </p>
               </div>
@@ -414,7 +410,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Rich Text Editor</h3>
                     </div>
-                    <p className="text-lg text-gray-500">Format notes with headers, lists, and highlights</p>
+                    <p className="text-[1rem] text-gray-500">Format notes with headers, lists, and highlights</p>
                   </div>
                 </div>
 
@@ -424,7 +420,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Quick Course</h3>
                     </div>
-                    <p className="text-lg text-gray-500">Jot down ideas instantly during lectures</p>
+                    <p className="text-[1rem] text-gray-500">Jot down ideas instantly during lectures</p>
                   </div>
                 </div>
 
@@ -434,7 +430,7 @@ const Landingpage = () => {
                       <img className="w-5 h-5" src={checkfilled} alt="" />
                       <h3 className="font-medium text-lg text-gray-700">Powerful Search</h3>
                     </div>
-                    <p className="text-lg text-gray-500">Find any note across all courses instantly</p>
+                    <p className="text-[1rem] text-gray-500">Find any note across all courses instantly</p>
                   </div>
                 </div>
               </div>
@@ -460,7 +456,7 @@ const Landingpage = () => {
             today.
           </p>
         </div>
-        <div className="max-w-400 m-auto mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-400 m-auto mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
           <HIWcard
             number="1"
             title="Create Account"
@@ -527,47 +523,16 @@ const Landingpage = () => {
             See how FocusGrid is transforming academic life
           </p>
         </div>
-        <div className="max-w-400 m-auto mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          <CommentCard
-            userImg={user1}
-            userName="Sarah Johnson"
-            comment="FocusGrid completely changed how I manage my coursework. I went from constantly missing deadlines to being ahead on all my assignments, The course organization is genius"
-            userDetail="Computer Science, MIT."
-          ></CommentCard>
-          <CommentCard
-            userImg={user2}
-            userName="Daniel Gbesimowo"
-            comment="The Pomodoro timer integration is perfect. I’ve doubled my productive study hours and my grades have never been better. 
-        This app is a game-changer for any serious student."
-            userDetail="Mathematics, Unilag."
-          ></CommentCard>
-          <CommentCard
-            userImg={user3}
-            userName="Emily Rodriguez"
-            comment="The Pomodoro timer integration is perfect. I’ve doubled my productive study hours and my grades have never been better. 
-        This app is a game-changer for any serious student."
-            userDetail="Engineering, Berkeley."
-          ></CommentCard>
-          <CommentCard
-            userImg={user4}
-            userName="Juliet Jenner"
-            comment="I was drowning in scattered notes and missed assignments before FocusGrid. 
-        Now everything is organized by course, and I can actually focus on learning instead of scrambling to remember what’s due. "
-            userDetail="Medicine, Johns Hopkins."
-          ></CommentCard>
-          <CommentCard
-            userImg={user5}
-            userName="Olamide Afunsho"
-            comment="FocusGrid completely changed how I manage my coursework. I went from constantly missing deadlines to being ahead on all my assignments, The course organization is genius"
-            userDetail="Business, Stanford."
-          ></CommentCard>
-          <CommentCard
-            userImg={user6}
-            userName="Jessica Taylor"
-            comment="The analytics feature helps me see where I’m spending my time. I’ve optimized my study schedule and have more free time than ever. 
-        Plus, the interface is gorgeous!"
-            userDetail="Psychology, Yale."
-          ></CommentCard>
+        <div className="max-w-400 m-auto mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
+          {comments.map((comment, index) => (
+            <CommentCard
+              key={index}
+              userImg={comment.userImg}
+              userName={comment.userName}
+              comment={comment.comment}
+              userDetail={comment.userDetail}
+            />
+          ))}
         </div>
       </section>
 
@@ -710,7 +675,7 @@ const Landingpage = () => {
       {/* FAQS SECTION */}
       <section
         id="faqs"
-        className="site-section bg-[#f9fAFB] space-y-8 scroll-mt-20 px-12"
+        className="site-section bg-[#f9fAFB] space-y-8 scroll-mt-20 px-4 sm:px-6 md:px-12"
       >
         <div className="max-w-400 m-auto flex justify-center">
           <HeaderChips title="FAQs" />
@@ -724,15 +689,11 @@ const Landingpage = () => {
           </p>
         </div>
 
-        <div className="m-auto max-w-400 space-y-6">
-          <Accordion
-            question="Is FocusGrid really free?"
-            answer="Yes! Our free plan includes core features like task management for up to 3 courses, study timer, and basic notes. You can upgrade to Pro anytime for advanced features."
-          ></Accordion>
-          <Accordion
-            question="How does the study timer work?"
-            answer="Absolutely! FocusGrid works perfectly on desktop, tablet and mobile. Our responsive design ensures a seamless experience across all devices. Native mobile apps coming soon!"
-          ></Accordion>
+        {/* FAQs list mapped from data */}
+        <div className="m-auto max-w-400 space-y-4">
+          {faqs.map((item, i) => (
+            <Accordion key={i} question={item.question} answer={item.answer} />
+          ))}
         </div>
       </section>
 
@@ -741,7 +702,7 @@ const Landingpage = () => {
         <div className="max-w-400 m-auto flex flex-col md:flex-row justify-between space-y-12 gap-2 md:gap-12 ">
           <div className="space-y-6">
             <img src={focusgridLogoWhite} alt="" />
-            <p>
+            <p className="text-[#8795A3] text-[1rem]">
               The ultimate productivity platform built specifically <br />
               for students. Organize your academic life, stay <br /> focused,
               and achieve your goals
@@ -764,30 +725,30 @@ const Landingpage = () => {
           <div className="space-y-6">
             <h3 className="text-white">Product</h3>
             <div className="text-[#8795A3] flex flex-col items-start gap-2">
-              <a className='block text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#features">Features</a>
-              <a className='block text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#pricing">Pricing</a>
-              <a className='block text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Roadmap</a>
-              <a className='block text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Changelog</a>
+              <a className='block text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#features">Features</a>
+              <a className='block text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#pricing">Pricing</a>
+              <a className='block text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Roadmap</a>
+              <a className='block text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Changelog</a>
             </div>
           </div>
 
           <div className="space-y-6">
             <h3 className="text-white">Company</h3>
             <div className="text-[#8795A3] flex flex-col items-start gap-2">
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">About</a>
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Blog</a>
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Careers</a>
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Contact</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">About</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Blog</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Careers</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Contact</a>
             </div>
           </div>
 
           <div className="space-y-6">
             <h3 className="text-white">Support</h3>
             <div className="text-[#8795A3] flex flex-col items-start gap-2">
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Help center</a>
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Documentation</a>
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">API</a>
-              <a className='text-lg hover:text-primary transition-all duration-300 ease-in-out' href="#">Status</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Help center</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Documentation</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">API</a>
+              <a className='text-[1rem] hover:text-primary transition-all duration-300 ease-in-out' href="#">Status</a>
             </div>
           </div>
         </div>

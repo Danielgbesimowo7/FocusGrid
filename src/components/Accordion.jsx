@@ -23,7 +23,7 @@ const Accordion = ({ question, answer }) => {
         onClick={toggle}
         className="w-full p-4 flex items-center justify-between text-left"
       >
-        <h3 className="font-semibold">{question}</h3>
+        <h3 className=" text-[1rem] font-medium text-gray-600">{question}</h3>
         <img
           src={chevron}
           alt="toggle"

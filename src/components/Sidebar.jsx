@@ -7,7 +7,7 @@ const Sidebar = ({ collapsed }) => {
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className={`hidden sm:flex flex-col ${desktopWidth} bg-slate-900 text-white transition-all duration-200 flex-shrink-0`}>
+      <aside className={`hidden sm:flex flex-col ${desktopWidth} bg-slate-900 text-white transition-all duration-200 shrink-0`}>
         <div className="p-4 flex items-center">
           <img src={focusgridLogo} alt="FocusGrid" className="h-8" />
         </div>

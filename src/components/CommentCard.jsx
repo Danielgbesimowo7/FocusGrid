@@ -8,10 +8,10 @@ const CommentCard = ({userImg, userName, userDetail, comment}) => {
       </div>
       <p className="text-[#6c7278] text-[16px] lg:text-[18px]">{comment}</p>
       <div className='flex items-center gap-3'>
-        <img src={userImg} alt="user" />
+        <img className="w-10 h-10 rounded-full" src={userImg} alt="user" />
         <div className='space-y-0.5'>
-          <h3 className="text-xl font-semibold">{userName}</h3>
-          <p className="text-gray-60 text-[16px]">{userDetail}</p>
+          <h3 className="text-[16px] font-medium">{userName}</h3>
+          <p className="text-gray-400 text-[16px]">{userDetail}</p>
         </div>
       </div>
     </div>
